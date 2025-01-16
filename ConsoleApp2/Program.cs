@@ -33,19 +33,36 @@
             //Console.WriteLine(a);
 
             //简单类型相互转换
-            int a = 10;
-            double d = 20.6;
-            a = (int)d;//不是四舍五入
-            Console.WriteLine(a);
+            //int a = 10;
+            //double d = 20.6;
+            //a = (int)d;//不是四舍五入
+            //Console.WriteLine(a);
 
             //把其他类型转换成string类型 变量.tostring（）   
             //object F12查看源代码
 
-            //+""
-            int b = 10;
-            string c = 10 + "";
-            Console.WriteLine(c);   
+            //+""//转化为string
+            //int b = 10;
+            //string c = 10 + "";
+            //Console.WriteLine(c);   
 
+
+            //Convert.To要转换的类型（要转换的值）;
+            //string a = "10.1";
+            //int b = Convert.ToInt32(a);
+            //Console.WriteLine(b);
+
+            //int i4 = int.Parse("123.345");
+            //Console.WriteLine(i4);
+
+            //double b = 5.51;
+            //int a = Convert.ToInt32(b);
+            //Console.WriteLine(a);
+            //四舍五入  靠近哪个数字就变成哪个数字  10.5就变成10  
+
+            //++  --自加一自减一
+
+            //&& 并且   ||或    ！非   即取反
 
         }
     }
