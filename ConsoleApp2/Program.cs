@@ -64,6 +64,26 @@
 
             //&& 并且   ||或    ！非   即取反
 
+
+            //操作数1？操作数2：操作数3
+            //？前面的是对的ture  就返回：前面的值，反之就返回：后面的 值
+
+            //int a = 10;
+            //int d = a > 10 ? 20 : 30;
+            //Console.WriteLine(d);
+
+
+            //判断闰年   条件被4整除不能被100整除      能被四百整除
+
+
+            //Console.WriteLine("请输入一个年份");
+            //int year = Convert.ToInt32(Console.ReadLine());
+            //bool d = (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
+            //Console.WriteLine(d);
+
+
+
+
         }
     }
 }
