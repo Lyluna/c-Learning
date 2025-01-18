@@ -1,14 +1,17 @@
-﻿namespace ConsoleApp2
+﻿using System.Threading.Tasks.Sources;
+
+namespace ConsoleApp2
 {
     internal class Program
     {
         //全局变量   成员变量
+
         const int name = 10;
         public static int a;
-        public static bool b ;
+        public static bool b;
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            //Console.WriteLine("Hello, World!");
             //基类
             //object a = 10;
             //Console.WriteLine(a);   
@@ -82,8 +85,112 @@
             //Console.WriteLine(d);
 
 
+            //输入两个整数，并将其分别赋给两个变量，交换它们的值后输出(交换变量)
+            //Console.WriteLine("请输入第一个数字");
+            // int num1 = Convert.ToInt32(Console.ReadLine());
+
+            //Console.WriteLine("请输入第二个数字");
+            //int num2 =  Convert.ToInt32(Console.ReadLine());
+
+            //int num3 = num1;
+            //num1 = num2;
+            //num2 = num3;
+            //Console.WriteLine(num1);
+            //Console.WriteLine(num2);
+
+
+            //二进制数左移 右移
+            //int a = 4;
+            // int c = a << 2;
+            //Console.WriteLine(c);
+
+            //if else
+            /*int socre = Convert.ToInt32(Console.ReadLine());
+            string so = null;
+            if (socre >= 90) 
+            {
+                so = "A";
+
+            }
+            else if (socre >= 80)
+            {
+                so = "B";
+            }
+            else if (socre >= 70)
+            {
+                so = "c";
+            }
+            else if (socre >= 60)
+            {
+                so = "d";
+            }
+            else
+            {
+                so= "e";
+            }
+            Console.WriteLine(so);
+            */
+
+            //switch高级用法
+            //表达式 switch{
+            //值 => 返回的值 如果没有对应匹配就报错   值与值之间用，（逗号）隔开
+            //int a = 10;
+            //string result = a switch
+            //{
+            //    1 => "aa",// => lambda表达式  委托 linq ef
+            //    2 => "bb",
+            //    11 => "cc",
+            //    _ => "xingyang" //弃元
+            //};
+            //Console.WriteLine(result);
+
+
+
+            //switch 常规使用
+            //int a = 10;
+            //switch (a)
+            //{
+            //    case 10:
+            //        Console.WriteLine(a);
+            //        break;
+            //    default:
+            //        Console.WriteLine(a);
+            //        break;
+
+
+            //}
+
+            //    Console.WriteLine("请输入成绩");
+            //    int socre = Convert.ToInt32(Console.ReadLine());
+            //    string so = null;
+            //    so = socre switch
+            //    {
+            //        >= 90 and <= 100 => "a",
+            //        >= 80 and <= 90 => "b",
+            //        >= 70 and <= 80 => "c",
+            //        >= 60 and <= 70 => "d",
+            //        _ => "e"
+            //    };
+            //    Console.WriteLine(so);
+
+            int a = 10;
+            try
+            {
+                int b = a / 0;
+
+            }catch (Exception ex)
+            {
+                Console.WriteLine("当前网络不佳");
+
+            }finally { Console.WriteLine("fianlly"); }
+
+
 
 
         }
+
+
+
+
     }
 }
