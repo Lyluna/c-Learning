@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks.Sources;
+﻿using System;
+using System.Threading.Tasks.Sources;
 
 namespace ConsoleApp2
 {
@@ -173,19 +174,74 @@ namespace ConsoleApp2
             //    };
             //    Console.WriteLine(so);
 
-            int a = 10;
-            try
+            //int a = 10;
+            //try
+            //{
+            //    int b = a / 0;
+
+            //}catch (Exception ex)
+            //{
+            //    Console.WriteLine("当前网络不佳");
+
+            //}finally { Console.WriteLine("fianlly"); }
+
+            /*int a = 0;
+            int sum = 0;   
+            while (a <= 100) 
             {
-                int b = a / 0;
 
-            }catch (Exception ex)
+                sum += a;
+                if (sum > 20)
+                {
+                    
+                    Console.WriteLine(a);
+                    break;
+                }
+                
+                ++a;
+              
+            }*/
+
+
+            /*int max = 0;
+            int min = 100;
+            int sum = 0;
+            for (int i = 0;i < 7;i++)
             {
-                Console.WriteLine("当前网络不佳");
+                Console.WriteLine("请打分");
+                int socre = Convert.ToInt32(Console.ReadLine());
 
-            }finally { Console.WriteLine("fianlly"); }
+                if (socre > max)
+                {
+                    max = socre;
+                }
+                if (socre < min)
+                {
+                    min = socre;
 
+                }
+                sum += socre;
+                
+            }
+            Console.WriteLine(sum - max - min);
+            */
 
+            //斐波那契数列
+            // 1 1 2 3 5 8 13 21
+            int a = 1;
+            Console.WriteLine("第一个数字为"+a);
+            int b = 1;
+            Console.WriteLine("第二个数字为" + b);
+            for (int i = 2;i < 12; i++)
+            {
+                int c = a + b;
+                Console.WriteLine($"第{i}个数字为" + c);
 
+                a = b;
+                b = c;
+            }
+
+            
 
         }
 
