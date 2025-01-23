@@ -52,9 +52,9 @@ namespace ConsoleApp2
 
 
             //Convert.To要转换的类型（要转换的值）;
-            //string a = "10.1";
-            //int b = Convert.ToInt32(a);
-            //Console.WriteLine(b);
+            string a = "10";
+            int b = Convert.ToInt32(a);
+            Console.WriteLine(b);
 
             //int i4 = int.Parse("123.345");
             //Console.WriteLine(i4);
@@ -228,7 +228,7 @@ namespace ConsoleApp2
 
             //斐波那契数列
             // 1 1 2 3 5 8 13 21
-            int a = 1;
+            /*int a = 1;
             Console.WriteLine("第一个数字为"+a);
             int b = 1;
             Console.WriteLine("第二个数字为" + b);
@@ -239,7 +239,7 @@ namespace ConsoleApp2
 
                 a = b;
                 b = c;
-            }
+            }*/
 
             
 
